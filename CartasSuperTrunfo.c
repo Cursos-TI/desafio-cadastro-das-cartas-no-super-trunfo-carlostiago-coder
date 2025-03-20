@@ -3,7 +3,7 @@
 int main(){
 
     int Populacao, PontosTuristicos;
-    float PIB, Areakm;
+    float PIB, Areakm, DensidadePopulacional, PIBpercapita;
     char Estado, Codigo[50], NomeCidade[60];
 
     printf("Desafio Cartas Super Trunfo! \n");
@@ -31,6 +31,9 @@ int main(){
     printf("Digite a Areakm: \n");
     scanf("%f", &Areakm);
 
+    DensidadePopulacional = (float) Populacao / Areakm;
+    PIBpercapita = (float) PIB / Populacao;
+
      printf("Carta 1 \n");
 
      printf("Estado: %c \n", Estado);
@@ -46,6 +49,10 @@ int main(){
      printf("PIB: %.2f Bilhoes de reais \n", PIB);
 
      printf("Areakm: %.2f km² \n", Areakm);
+
+     printf("DensidadePopulacional: %.2f hab/km² \n", DensidadePopulacional);
+
+     printf("PIBpercapita: %.2f hab/km² \n", PIBpercapita);
 
      printf("Digite o Estado: \n");
     scanf(" %c", &Estado);
@@ -70,6 +77,9 @@ int main(){
     printf("Digite a Areakm: \n");
     scanf("%f", &Areakm);
 
+    DensidadePopulacional = (float) Populacao / Areakm;
+    PIBpercapita = (float) PIB / Populacao;
+
     printf("Carta 2 \n");
 
     printf("Estado: %c \n", Estado);
@@ -85,6 +95,10 @@ int main(){
      printf("PIB: %.2f Bilhoes de reais \n", PIB);
 
      printf("Areakm: %.2f km² \n", Areakm);
+
+     printf("DensidadePopulacional: %.2f hab/km² \n", DensidadePopulacional);
+     
+     printf("PIBpercapita: %.2f hab/km² \n", PIBpercapita);
 
      return 0;
 
